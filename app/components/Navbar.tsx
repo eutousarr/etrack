@@ -3,6 +3,7 @@ import { UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import Icone from "@/public/img/taureau.png";
+import Icone from "@/public/img/taureau.png";
 import { checkAndAddUser } from "../actions";
 import Image from "next/image";
 
@@ -26,8 +27,10 @@ const Navbar = () => {
                   <Image
                     src={Icone}
                     width={56}
+                    width={59}
                     height={56}
                     alt="logo"
+                    className="h-12 w-12 mr-2 rounded-full" /></Link>
                     className="h-12 w-12 mr-2 rounded-full"  /></Link>
                 Kisarr <span className="text-accent">.Bons</span>
               </div>
@@ -61,7 +64,7 @@ const Navbar = () => {
         ) : (
           <div className="flex items-center justify-between">
             <div className="flex text-2xl items-center font-bold">
-              e <span className="text-accent">.Track</span>
+              Gestion <span className="text-accent"> des bons</span>
             </div>
             <div className=" flex mt-2 justify-center">
               <Link href={"/sign-in"} className="btn btn-sm">
