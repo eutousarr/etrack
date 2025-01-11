@@ -1,5 +1,3 @@
-import { UserButton } from "@clerk/nextjs";
-import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
 import BudgetItem from "./components/BudgetItem";
@@ -30,7 +28,7 @@ export default function Home() {
                 href={"/sign-up"}
                 className="btn btn-sm md:btn-md ml-2 btn-accent"
               >
-                S'inscrire
+                S&apos;inscrire
               </Link>
             </div>
 

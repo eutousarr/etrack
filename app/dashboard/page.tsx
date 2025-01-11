@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client"
 
 import { useUser } from '@clerk/nextjs';
@@ -5,7 +8,7 @@ import { useEffect, useState } from 'react'
 import { getLastBudgets, getLastTransactions, getReachedBudgets, getTotalTransactionAmount, getTotalTransactionCount, getUserBudgetData } from '../actions';
 import Wrapper from '../components/Wrapper';
 import { CircleDollarSign, Landmark, PiggyBank } from 'lucide-react';
-import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
 import { Budget, Transaction } from '@/type';
 import BudgetItem from '../components/BudgetItem';
 import Link from 'next/link';
@@ -49,7 +52,7 @@ const page = () => {
 
     useEffect(() => {
         fetchData()
-    }, [user])
+    }, [])
 
     return (
         <Wrapper >

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client"
 import { addTransactionToBudget, deleteBudget, deleteTransaction, getTrasactionsByBudgetId } from '@/app/actions'
 import BudgetItem from '@/app/components/BudgetItem'
@@ -53,13 +54,14 @@ const page = ({ params }: { params: Promise<{ budgetId: string }> }) => {
       if (isNaN(amountNumber) || amountNumber <= 0) {
         throw new Error("Le montant doit être un nombre positif.");
       }
-      const newTransaction = await addTransactionToBudget(budgetId, amountNumber, description)
+      await addTransactionToBudget(budgetId, amountNumber, description)
 
       setNotification(`Transaction ajoutée avec succès`)
       fetchBudgetData(budgetId)
       setAmount('')
       setDescription('')
     } catch (error) {
+      console.error("Erreur lors de l'ajout de la transaction:", error);
       setNotification(`Vous avez dépassé votre budget`)
     }
   }

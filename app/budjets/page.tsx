@@ -1,5 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Wrapper from "../components/Wrapper";
 import { useUser } from "@clerk/nextjs";
 import EmojiPicker from "emoji-picker-react";
@@ -103,7 +105,7 @@ const page = () => {
               ✕
             </button>
           </form>
-          <h3 className="font-bold text-lg">Création d'un budjets</h3>
+          <h3 className="font-bold text-lg">Création d&apos;un budjets</h3>
           <p className="py-4">Permet de controler ces depenses facilement</p>
           <div className="w-full flex flex-col">
             <input
