@@ -61,7 +61,7 @@ const Navbar = () => {
         ) : (
           <div className="flex items-center justify-between">
             <div className="flex text-2xl items-center font-bold">
-              e <span className="text-accent">.Track</span>
+              Gestion <span className="text-accent"> des bons</span>
             </div>
             <div className=" flex mt-2 justify-center">
               <Link href={"/sign-in"} className="btn btn-sm">
