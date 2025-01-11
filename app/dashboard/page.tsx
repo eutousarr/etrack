@@ -69,7 +69,7 @@ const page = () => {
                                     Total des transactions
                                 </span>
                                 <span className='text-2xl font-bold text-accent'>
-                                    {totalAmount !== null ? `${totalAmount}€` : 'N/A'}
+                                    {totalAmount !== null ? `${totalAmount} Fr` : 'N/A'}
                                 </span>
                             </div>
 
@@ -107,7 +107,7 @@ const page = () => {
                         <div className='roundex-xl md:w-2/3'>
                             <div className='border-2 border-base-300 p-5 rounded-xl'>
                                 <h3 className='text-lg font-semibold mb-3'>
-                                    Statistiques ( en € )
+                                    Statistiques ( en  Fr )
                                 </h3>
                                 <ResponsiveContainer height={250} width="100%">
                                     <BarChart width={730} height={250} data={budgetData}>

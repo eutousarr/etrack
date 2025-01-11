@@ -36,11 +36,11 @@ const BudgetItem: React.FC<BudgetItemProps> = ({ budget , enableHover}) => {
                         </span>
                     </div>
                 </div>
-                <div className="text-xl font-bold text-accent">{budget.amount} €</div>
+                <div className="text-xl font-bold text-accent">{budget.amount}  Fr</div>
             </div>
             <div className="flex justify-between items-center mt-4 text-gray-500 text-sm">
-                <span>{totalTransactionAmount} € dépensés</span>
-                <span>{remainingAmount} € restants</span>
+                <span>{totalTransactionAmount}  Fr dépensés</span>
+                <span>{remainingAmount}  Fr restants</span>
             </div>
 
             <div>

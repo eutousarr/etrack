@@ -163,7 +163,7 @@ const page = ({ params }: { params: Promise<{ budgetId: string }> }) => {
                       <td className='text-lg md:text-3xl'>{transaction.emoji}</td>
                       <td>
                         <div className="badge badge-accent badge-xs md:badge-sm">
-                          - {transaction.amount} €</div>
+                          - {transaction.amount}  Fr</div>
                       </td>
                       <td>{transaction.description}</td>
                       <td>
